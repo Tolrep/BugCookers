@@ -1,0 +1,113 @@
+h1, h2, h3, h4, h5, .navbar li {color:#827062;font-weight: 600}
+
+/*-------------*/
+/*   HEADER   */
+/*-----------*/
+body {
+  padding-top: 13rem; /*obligatoire avec un navbar fix top - debut du texte de la page*/
+  background-image: url("../image/wallpaper.png");
+  font-family: 'Poiret One', cursive, 'arial';
+  font-size:1.9rem;
+  /*font-family: 'Open Sans', sans-serif;*/
+  /*font-family: 'Dosis', sans-serif;*/
+}
+
+.navbar {
+  height: 12rem; /*hauteur du nav*/
+}
+
+.logo {
+  margin: 1rem 0; /*margin top et bottom*/
+}
+
+.navbar .container-fluid {
+  background-color: #fff;
+}
+
+/*Pour centrer le menu dans la nav - le menu burger est en ligne aussi*/
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  float: none;
+  margin:0;
+  padding: 0;
+}
+
+/*Titre du menu du navbar*/
+.navbar-default .navbar-nav > li > a {
+  color:#827062;
+  font-size: 1.7rem;
+}
+
+/*Plats signatures*/
+.plats figure {
+	position: relative;
+	width: 80%;
+	border: thin silver solid;
+	margin: 0 10% 2rem 10%;
+}
+
+.plats img {
+	display: block;
+	width: 100%;
+  min-height: 200px; /*image dimmension de base : H200px */
+	opacity: 0.9;
+}
+
+.plats figure p {
+  position:absolute;
+	width:100%;
+  min-height: 200px; /*taille de l image*/
+	top: 0;
+  padding: 20% 1rem;
+  margin:0; /*p de base à un margin 0 0 10px 0 - avec 0 on annule l ancien margin */
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+.plats figure  a {
+  text-decoration: none;
+}
+
+.plats figure:hover p {
+	opacity: 1;
+  /*background-color:rgba(130, 112, 98, 0.5);*/
+  background-color:rgba( 	192, 173, 150, 0.6); /*fond marron clair transparent*/
+}
+
+.plats figure:hover img {
+	opacity: 0.2;
+}
+
+.plats .glyphicon {
+  color: #7ede7e;
+  font-size: 3rem;
+}
+
+/*Fondateurs*/
+.founders .rounded {
+  border-radius: 50%;
+}
+
+.figure-caption .founders_link ul {
+  display: inline;
+	list-style: none;
+}
+
+/*Partenaire*/
+.partner {
+  margin: 1rem 0;
+}
+
+.partner img {
+  width: 80%;
+  max-height: 150px; /*image dimmension de base : H200px */
+}
+
+/*-------------*/
+/*   FOOTER   */
+/*-----------*/
+.page-footer {
+  margin-top: 2rem;
+  background-color: rgba(241,241,241,0.5);
+}
