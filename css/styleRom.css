@@ -1,4 +1,7 @@
-h1, h2, h3, h4, h5, .navbar li {color:#827062;font-weight: 600}
+h1, h2, h3, h4, h5, .navbar li {
+    color: #827062;
+    font-weight: 600;
+}
 
 /*-------------*/
 /*   HEADER   */
@@ -7,9 +10,7 @@ body {
   padding-top: 15rem; /*obligatoire avec un navbar fix top - debut du texte de la page*/
   background-image: url("../images/wallpaper.png");
   font-family: 'Poiret One', cursive, 'arial';
-  font-size:1.9rem;
-  /*font-family: 'Open Sans', sans-serif;*/
-  /*font-family: 'Dosis', sans-serif;*/
+  font-size: 1.9rem;
 }
 
 .navbar {
