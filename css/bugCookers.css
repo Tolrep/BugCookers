@@ -16,6 +16,17 @@
 	height: auto;
 }
 
+.logoFooter {
+	height: 30px;
+}
+
+.footerFin {
+	padding-bottom: 2rem;
+}
+
+.selectCase {
+	background-color: #C0AD96;
+}
 h1 {
 	color: #827062;
 }
