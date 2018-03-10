@@ -1,35 +1,37 @@
-p {
-	color:#666666;
-}
-
 h1, h2, h3, h4, h5, .navbar li {
-    color: #827062;
-    font-weight: 600;
+	color: #827062;
+	font-weight: 600;
 }
 
-/*-------------*/
-/*   HEADER   */
-/*-----------*/
+p {
+	color:#666666; /* WHY ? */
+}
+
 body {
-  padding-top: 15rem; /*obligatoire avec un navbar fix top - debut du texte de la page*/
+  padding-top: 16rem; /*obligatoire avec un navbar fix top - debut du texte de la page*/
   background-image: url("../images/wallpaper.png");
   font-family: 'Poiret One', cursive, 'arial';
   font-size: 1.9rem;
 }
 
+.row {
+	padding: 0 10px 20px 10px;
+}
+
+/*   HEADER   */
 .navbar {
   height: 12rem; /*hauteur du nav*/
 }
 
 .logo {
-  margin: 1rem 0; /*margin top et bottom*/
+  margin: 2rem 0 1rem 0;
 }
 
 .navbar .container-fluid {
   background-color: #fff;
 }
 
-/*Pour centrer le menu dans la nav - le menu burger est en ligne aussi*/
+/* NAVBAR & BURGER MENU : ALIGN */
 .navbar-nav {
   display: flex;
   justify-content: space-between;
@@ -38,51 +40,33 @@ body {
   padding: 0;
 }
 
-/*Titre du menu du navbar*/
+/* NAVBAR TITLE MENU */
 .navbar-default .navbar-nav > li > a {
   color:#827062;
   font-size: 1.7rem;
 }
 
-/*Plats signatures*/
+/* ACCUEIL - PLATS SIGNATURES */
 .plats figure {
 	position: relative;
-	width: 80%;
-	border: 1px solid #C0AD96;
-	margin: 0 10% 2rem 10%;
-  background-color: #fff;
+	width: 100%;
 }
 
 .plats img {
 	display: block;
 	width: 100%;
-  min-height: 200px; /*image dimmension de base : H200px */
+  height: auto;
 	opacity: 0.9;
 }
 
 .plats figure p {
   position:absolute;
 	width:100%;
-  min-height: 200px; /*taille de l image*/
+  height: 100%;
 	top: 0;
-  padding: 20% 1rem;
+  padding: 17% 1rem;
   margin:0; /*p de base à un margin 0 0 10px 0 - avec 0 on annule l ancien margin */
   opacity: 0;
-  font-size: 1.8rem;
-}
-
-.plats figure  a {
-  text-decoration: none;
-}
-
-.plats figure:hover p {
-	opacity: 1;
-  /*background-color:rgba(130, 112, 98, 0.5);*/
-  background-color:rgba( 	192, 173, 150, 0.6); /*fond marron clair transparent*/
-}
-
-.plats figure:hover img {
-	opacity: 0.2;
 }
 
 .plats .glyphicon {
@@ -90,11 +74,35 @@ body {
   font-size: 3rem;
 }
 
-/*Fondateurs*/
+.thumbnail a{
+  text-decoration: none;
+}
+
+.thumbnail a h3{
+  margin: 0 ;
+  padding: 15px;
+}
+
+.thumbnail a:hover h3 {
+  color: #C0AD96;
+}
+
+.plats figure:hover p {
+	opacity: 1;
+  background-color:rgba( 	192, 173, 150, 0.6); /*fond marron clair transparent*/
+}
+
+.plats figure:hover img {
+	opacity: 0.2;
+}
+
+
+/* ACCUEIL - FOUNDERS */
 .founders .thumbnail {
   margin-top: 120px;
-  border-color: #C0AD96;
+  border: 1px solid #C0AD96;
 }
+
 
 .founders .rounded {
   border-radius: 50%;
@@ -102,38 +110,38 @@ body {
   border: 1px solid #C0AD96;
 }
 
-.founders .founders_link {
-  height: 60px;
+.founder_link {
+  height: 50px;
   padding: 10px 0;
 }
 
-.figure-caption .founders_link ul {
+.list_founder {
   display: inline;
-	list-style: none;
+	list-style-type: none;
+  padding-left: 0px;
 }
 
-.founders .founders_link li a {
+.founder_link li a {
     color: #C0AD96;
 }
 
+.founder_Detail {
+  padding: 10px;
+}
 
 
-/*Partenaire*/
+/* ACCUEIL - PARTNERS */
 .partner {
   margin: 1rem 0;
 }
 
 .partner img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
-.page-footer {
-  margin-top: 4rem;
-  background-color: rgba(241,241,241,0.5);
-}
 
-
+/* ------ DOCUMENTER !!!! */
 .boutonc {
 	width:100%;
 	background-color:white;
@@ -155,8 +163,9 @@ body {
 	padding-top: 2px;
 	color: white;
 	font-weight: 600;
-	margin-top: 20px; 
+	margin-top: 20px;
 	}
+
 .boutonsub {
 	border-top: 0px;
 	border-left: 0px;
@@ -164,6 +173,7 @@ body {
 	border-bottom: 0px;
 }
 
+/* ------ DOCUMENTER !!!! */
 .ville {
 		margin: 1.3px 0 1.3px;
 	}
@@ -173,22 +183,22 @@ body {
 	height: auto;
 }
 
-.logoFooter {
-	height: 30px;
-}
-
-.footerFin {
-	padding-bottom: 2rem;
-}
-
 .selectCase {
 	background-color: #C0AD96;
 }
 
-.thumbnail>img
+
+/* ------ DOCUMENTER !!!! */
+.thumbnail
+{
+   padding: 0px;
+}
+
+
+/*.thumbnail>img
 {
    max-height: 200px;
-}
+}*/
 
 .villeCarte
 {
@@ -233,25 +243,45 @@ body {
     opacity: 0;
 }
 
-.thumbnail
-{
-   padding: 0px;
+
+/* FOOTER */
+.page-footer {
+  margin-top: 4rem;
+  background-color: rgba(241,241,241,0.5);
 }
+
+.logoFooter {
+	height: 30px;
+}
+
+.footerFin {
+	padding-bottom: 2rem;
+}
+
+.page-footer .list-unstyled a {
+	color: #C0AD96;
+}
+
+.footer-copyright, .footer-copyright a {
+	color: #827062;
+}
+
 
 @media all and (max-width: 1199px)
 {
-    .thumbnail>img
+    /*.thumbnail>img
     {
        min-height: 200px;
-    }
+    }*/
 }
 
 @media all and (max-width: 767px)
 {
-    .thumbnail
+    /*.thumbnail
     {
         min-height: 200px;
         width: 345px;
         margin: auto;
-    }
+    }*/
 }
+
