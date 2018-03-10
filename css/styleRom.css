@@ -43,42 +43,28 @@ body {
 /*Plats signatures*/
 .plats figure {
 	position: relative;
-	width: 80%;
-	border: 1px solid #C0AD96;
-	margin: 0 10% 2rem 10%;
-  background-color: #fff;
+	width: 100%;
+  border-top: 1px solid #C0AD96;
+  border-right: 1px solid #C0AD96;
+  border-left: 1px solid #C0AD96;
 }
 
 .plats img {
 	display: block;
 	width: 100%;
-  min-height: 200px; /*image dimmension de base : H200px */
+  height: auto;
 	opacity: 0.9;
 }
 
 .plats figure p {
   position:absolute;
 	width:100%;
-  min-height: 200px; /*taille de l image*/
+  height: 100%;
 	top: 0;
-  padding: 20% 1rem;
+  padding: 17% 1rem;
   margin:0; /*p de base à un margin 0 0 10px 0 - avec 0 on annule l ancien margin */
   opacity: 0;
-  font-size: 1.8rem;
-}
-
-.plats figure  a {
-  text-decoration: none;
-}
-
-.plats figure:hover p {
-	opacity: 1;
-  /*background-color:rgba(130, 112, 98, 0.5);*/
-  background-color:rgba( 	192, 173, 150, 0.6); /*fond marron clair transparent*/
-}
-
-.plats figure:hover img {
-	opacity: 0.2;
+  /*font-size: 1.8rem;*/
 }
 
 .plats .glyphicon {
@@ -86,11 +72,44 @@ body {
   font-size: 3rem;
 }
 
+.platTitre {
+  border-right: 1px solid #C0AD96;
+  border-bottom: 1px solid #C0AD96;
+  border-left: 1px solid #C0AD96;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.platTitre a{
+  text-decoration: none;
+}
+
+.platTitre a h3{
+  text-decoration: none;
+  margin: 0 ;
+  padding: 15px;
+}
+
+.platTitre a:hover h3 {
+  color: #C0AD96;
+}
+
+.plats figure:hover p {
+	opacity: 1;
+  background-color:rgba( 	192, 173, 150, 0.6); /*fond marron clair transparent*/
+}
+
+.plats figure:hover img {
+	opacity: 0.2;
+}
+
+
 /*Fondateurs*/
 .founders .thumbnail {
   margin-top: 120px;
-  border-color: #C0AD96;
+  border: 1px solid #C0AD96;
 }
+
 
 .founders .rounded {
   border-radius: 50%;
@@ -98,20 +117,24 @@ body {
   border: 1px solid #C0AD96;
 }
 
-.founders .founders_link {
-  height: 60px;
+.founder_link {
+  height: 50px;
   padding: 10px 0;
 }
 
-.figure-caption .founders_link ul {
+.list_founder {
   display: inline;
-	list-style: none;
+	list-style-type: none;
+  padding-left: 0px;
 }
 
-.founders .founders_link li a {
+.founder_link li a {
     color: #C0AD96;
 }
 
+.founder_Detail {
+  padding: 10px;
+}
 
 
 /*Partenaire*/
@@ -120,7 +143,7 @@ body {
 }
 
 .partner img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
