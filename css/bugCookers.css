@@ -202,11 +202,7 @@ body .navbar-default .navbar-nav>.active>a,
    padding: 0px;
 }
 
-
-/*.thumbnail>img
-{
-   max-height: 200px;
-}*/
+/* PAGE carte.html */
 
 .villeCarte
 {
@@ -217,7 +213,7 @@ body .navbar-default .navbar-nav>.active>a,
    margin-left: auto;
    margin-right: auto;
    border-radius: 50px;
-   margin-top: -12px;
+   margin-top: -14px;
    color: white;
    background-color: #C0AD96;
 }
@@ -231,7 +227,7 @@ body .navbar-default .navbar-nav>.active>a,
     margin-left: auto;
     margin-right: auto;
     border-radius: 50px;
-    margin-top: -12px;
+    margin-top: -14px;
     color: white;
     background-color: #7ede7e;
 }
@@ -245,7 +241,7 @@ body .navbar-default .navbar-nav>.active>a,
     margin-left: auto;
     margin-right: auto;
     border-radius: 50px;
-    margin-top: -12px;
+    margin-top: -14px;
     color: white;
     background-color: #7ede7e;
     opacity: 0;
@@ -273,23 +269,3 @@ body .navbar-default .navbar-nav>.active>a,
 .footer-copyright, .footer-copyright a {
 	color: #827062;
 }
-
-
-@media all and (max-width: 1199px)
-{
-    /*.thumbnail>img
-    {
-       min-height: 200px;
-    }*/
-}
-
-@media all and (max-width: 767px)
-{
-    /*.thumbnail
-    {
-        min-height: 200px;
-        width: 345px;
-        margin: auto;
-    }*/
-}
-
