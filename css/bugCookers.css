@@ -246,7 +246,7 @@ body .navbar-default .navbar-nav>.active>a,
     background-color: #7ede7e;
     opacity: 0;
 }
-/* page contact */
+/* page contact.html */
 .telephone .fa-phone
 {
   color: #C0AD96;
@@ -276,4 +276,10 @@ label {
 
 .footer-copyright, .footer-copyright a {
 	color: #827062;
+}
+
+@media all and (max-width: 767px){
+  .media-object {
+    display: none;
+  }
 }
