@@ -19,6 +19,14 @@ body {
 }
 
 /*   HEADER   */
+
+body .navbar-default .navbar-nav>.active>a,
+	.navbar-default .navbar-nav>.active>a:focus,
+ 	.navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background: #C0AD96;
+}
+
 .navbar {
   height: 12rem; /*hauteur du nav*/
 }
