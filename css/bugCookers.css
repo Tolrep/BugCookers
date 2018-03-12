@@ -246,7 +246,15 @@ body .navbar-default .navbar-nav>.active>a,
     background-color: #7ede7e;
     opacity: 0;
 }
-
+/* page contact */
+.telephone .fa-phone
+{
+  color: #C0AD96;
+}
+/* Formulaire */
+label {
+  color: #827062;
+}
 
 /* FOOTER */
 .page-footer {
@@ -258,7 +266,7 @@ body .navbar-default .navbar-nav>.active>a,
 	height: 30px;
 }
 
-.footerFin {
+.page-footer {
 	padding-bottom: 2rem;
 }
 
