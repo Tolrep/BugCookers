@@ -118,21 +118,6 @@ body .navbar-default .navbar-nav>.active>a,
   border: 1px solid #C0AD96;
 }
 
-.founder_link {
-  height: 50px;
-  padding: 10px 0;
-}
-
-.list_founder {
-  display: inline;
-	list-style-type: none;
-  padding-left: 0px;
-}
-
-.founder_link li a {
-    color: #C0AD96;
-}
-
 .founder_Detail {
   padding: 10px;
 }
@@ -144,7 +129,7 @@ body .navbar-default .navbar-nav>.active>a,
 }
 
 .partner img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
@@ -272,6 +257,10 @@ label {
 
 .page-footer .list-unstyled a {
 	color: #C0AD96;
+}
+
+.footerSpace {
+	margin-bottom: 20px;
 }
 
 .footer-copyright, .footer-copyright a {
