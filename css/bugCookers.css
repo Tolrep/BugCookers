@@ -142,7 +142,7 @@ body .navbar-default .navbar-nav>.active>a,
 	border-left: 0px;
 	border-right: 0px;
 	border-bottom: 1px solid #C0AD96;
-	padding-top: 7px;
+	padding-top: 1px;
 	}
 
 .boutoncn {
@@ -271,4 +271,16 @@ label {
   .media-object {
     display: none;
   }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.villeBouton {
+  margin-top: -1.5rem;
 }
