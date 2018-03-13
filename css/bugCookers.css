@@ -91,20 +91,6 @@ body .navbar-default .navbar-nav>.active>a,
   padding: 15px;
 }
 
-.thumbnail a:hover h3 {
-  color: #C0AD96;
-}
-
-.plats figure:hover p {
-	opacity: 1;
-  background-color:rgba( 	192, 173, 150, 0.6); /*fond marron clair transparent*/
-}
-
-.plats figure:hover img {
-	opacity: 0.2;
-}
-
-
 /* ACCUEIL - FOUNDERS */
 .founders .thumbnail {
   margin-top: 120px;
@@ -277,6 +263,21 @@ label {
 
 .footer-copyright, .footer-copyright a {
 	color: #827062;
+}
+
+@media all and (min-width: 992px){
+	.thumbnail a:hover h3 {
+	  color: #C0AD96;
+	}
+
+	.plats figure:hover p {
+		opacity: 1;
+	  background-color:rgba( 	192, 173, 150, 0.6); /*fond marron clair transparent*/
+	}
+
+	.plats figure:hover img {
+		opacity: 0.2;
+	}
 }
 
 @media all and (max-width: 767px){
