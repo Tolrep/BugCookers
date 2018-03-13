@@ -134,7 +134,7 @@ body .navbar-default .navbar-nav>.active>a,
 }
 
 
-/* ------ DOCUMENTER !!!! */
+/* Pages norestaurants.html */
 .boutonc {
 	width:100%;
 	background-color:white;
@@ -144,6 +144,18 @@ body .navbar-default .navbar-nav>.active>a,
 	border-bottom: 1px solid #C0AD96;
 	padding-top: 1px;
 	}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.villeBouton {
+  margin-top: -1.5rem;
+}
 
 .boutoncn {
 	width:100%;
@@ -271,16 +283,4 @@ label {
   .media-object {
     display: none;
   }
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.villeBouton {
-  margin-top: -1.5rem;
 }
