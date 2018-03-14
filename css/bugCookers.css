@@ -156,6 +156,10 @@ body {
 	border-bottom: 0px;
 }
 
+.form-control {
+	font-size: 2rem;
+}
+
 /* ------ DOCUMENTER !!!! */
 .ville {
 		margin: 1.3px 0 1.3px;
