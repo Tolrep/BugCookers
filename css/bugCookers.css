@@ -20,12 +20,6 @@ body {
 
 /*   HEADER   */
 
-body .navbar-default .navbar-nav>.active>a,
-	.navbar-default .navbar-nav>.active>a:focus,
- 	.navbar-default .navbar-nav>.active>a:hover {
-    color: #555;
-    background: #C0AD96;
-}
 
 .navbar {
   height: 12rem; /*hauteur du nav*/
@@ -40,7 +34,7 @@ body .navbar-default .navbar-nav>.active>a,
 }
 
 /* NAVBAR color hover */
-.nav > li > a:focus, .nav > li > a:hover {
+.nav > .active > li > a, .nav > .active > li > a:focus, .nav > .active > li > a:hover {
     background-color: #C0AD96;
 		border-radius: 2px;
 		color:#fff;
