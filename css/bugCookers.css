@@ -268,12 +268,6 @@ label {
     display: block;
     content: "";
     height: 175px;
-    margin: -175px 0 0;
-}
-#contactForm:before {
-    display: block;
-    content: "";
-    height: 175px;
     margin: -170px 0 0;
 }
 
