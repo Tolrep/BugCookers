@@ -39,19 +39,17 @@ body .navbar-default .navbar-nav>.active>a,
   background-color: #fff;
 }
 
-/* NAVBAR & BURGER MENU : ALIGN */
-.navbar-nav {
-  display: flex;
-  justify-content: space-between;
-  float: none;
-  margin:0;
-  padding: 0;
+/* NAVBAR color hover */
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: #C0AD96;
+		border-radius: 2px;
+		color:#fff;
 }
 
 /* NAVBAR TITLE MENU */
-.navbar-default .navbar-nav > li > a {
+.nav > li > a {
   color:#827062;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 /* ACCUEIL - PLATS SIGNATURES */
