@@ -121,6 +121,7 @@ body .navbar-default .navbar-nav>.active>a,
 
 
 /* Pages norestaurants.html */
+
 .boutonc {
 	width:100%;
 	background-color:white;
@@ -254,7 +255,7 @@ label {
 }
 
 .page-footer .list-unstyled a {
-	color: #C0AD96;
+	color: #827062;
 }
 
 .footerSpace {
@@ -275,7 +276,7 @@ label {
     display: block;
     content: "";
     height: 175px;
-    margin: -175px 0 0;
+    margin: -170px 0 0;
 }
 
 @media all and (min-width: 992px){
