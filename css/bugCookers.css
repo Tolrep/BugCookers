@@ -8,10 +8,10 @@ p {
 }
 
 body {
-  padding-top: 16rem; /*obligatoire avec un navbar fix top - debut du texte de la page*/
-  background-image: url("../images/wallpaper.png");
-  font-family: 'Poiret One', cursive, 'arial';
-  font-size: 1.9rem;
+	padding-top: 16rem; /*obligatoire avec un navbar fix top - debut du texte de la page*/
+	background-image: url("../images/wallpaper.png");
+	font-family: 'Poiret One', cursive, 'arial';
+	font-size: 1.9rem;
 }
 
 .row {
@@ -20,38 +20,29 @@ body {
 
 /*   HEADER   */
 
-body .navbar-default .navbar-nav>.active>a,
-	.navbar-default .navbar-nav>.active>a:focus,
- 	.navbar-default .navbar-nav>.active>a:hover {
-    color: #555;
-    background: #C0AD96;
-}
-
 .navbar {
-  height: 12rem; /*hauteur du nav*/
+	height: 12rem; /*hauteur du nav*/
 }
 
 .logo {
-  margin: 2rem 0 1rem 0;
+	margin: 2rem 0 1rem 0;
 }
 
 .navbar .container-fluid {
-  background-color: #fff;
+	background-color: #fff;
 }
 
-/* NAVBAR & BURGER MENU : ALIGN */
-.navbar-nav {
-  display: flex;
-  justify-content: space-between;
-  float: none;
-  margin:0;
-  padding: 0;
+/* NAVBAR color hover */
+.nav > li.active > a, .nav > li > a:focus, .nav > li > a:hover {
+    background-color: #C0AD96;
+	border-radius: 2px;
+	color:#fff;
 }
 
 /* NAVBAR TITLE MENU */
-.navbar-default .navbar-nav > li > a {
-  color:#827062;
-  font-size: 1.7rem;
+.nav > li > a {
+	color:#827062;
+	font-size: 2rem;
 }
 
 /* ACCUEIL - PLATS SIGNATURES */
@@ -63,78 +54,79 @@ body .navbar-default .navbar-nav>.active>a,
 .plats img {
 	display: block;
 	width: 100%;
-  height: auto;
+  	height: auto;
 	opacity: 0.9;
 }
 
-.plats figure p {
-  position:absolute;
+.plats figcaption p {
+	position:absolute;
 	width:100%;
-  height: 100%;
+	height: 100%;
 	top: 0;
-  padding: 17% 1rem;
-  margin:0; /*p de base à un margin 0 0 10px 0 - avec 0 on annule l ancien margin */
-  opacity: 0;
+	padding: calc(17% - 15px) 1rem 0 1rem;
+	margin:0; /*p de base à un margin 0 0 10px 0 - avec 0 on annule l ancien margin */
+	opacity: 0;
 }
 
 .plats .glyphicon {
-  color: #7ede7e;
-  font-size: 3rem;
+	color: #827062;
+	font-size: 3rem;
 }
 
 .thumbnail a{
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .thumbnail a h3{
-  margin: 0 ;
-  padding: 15px;
+	margin: 0 ;
+	padding: 15px;
 }
 
-.thumbnail a:hover h3 {
-  color: #C0AD96;
+.restaurants figcaption h3 {
+  	position:absolute;
+	width:calc(100% - 30px);
+	top: calc(50% - 30px);
+  	margin:0;
+	color :#fff;
+	font-weight: 600;
 }
 
-.plats figure:hover p {
-	opacity: 1;
-  background-color:rgba( 	192, 173, 150, 0.6); /*fond marron clair transparent*/
+.restaurants  img {
+	display: block;
+	width: 100%;
 }
-
-.plats figure:hover img {
-	opacity: 0.2;
-}
-
 
 /* ACCUEIL - FOUNDERS */
 .founders .thumbnail {
-  margin-top: 120px;
-  border: 1px solid #C0AD96;
+	margin-top: 120px;
+	border: 1px solid #C0AD96;
 }
 
 
 .founders .rounded {
-  border-radius: 50%;
-  margin-top: -110px;
-  border: 1px solid #C0AD96;
+	border-radius: 50%;
+	margin-top: -110px;
+	border: 1px solid #C0AD96;
 }
 
 .founder_Detail {
-  padding: 10px;
+	padding: 10px;
 }
 
 
 /* ACCUEIL - PARTNERS */
 .partner {
-  margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .partner img {
-  width: 70%;
-  height: auto;
+	width: 70%;
+	height: auto;
 }
 
 
-/* ------ DOCUMENTER !!!! */
+/* Pages norestaurants.html */
+
 .boutonc {
 	width:100%;
 	background-color:white;
@@ -142,8 +134,20 @@ body .navbar-default .navbar-nav>.active>a,
 	border-left: 0px;
 	border-right: 0px;
 	border-bottom: 1px solid #C0AD96;
-	padding-top: 7px;
-	}
+	padding-top: 1px;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.villeBouton {
+	margin-top: -1.5rem;
+}
 
 .boutoncn {
 	width:100%;
@@ -157,7 +161,7 @@ body .navbar-default .navbar-nav>.active>a,
 	color: white;
 	font-weight: 600;
 	margin-top: 20px;
-	}
+}
 
 .boutonsub {
 	border-top: 0px;
@@ -166,10 +170,14 @@ body .navbar-default .navbar-nav>.active>a,
 	border-bottom: 0px;
 }
 
+.form-control {
+	font-size: 2rem;
+}
+
 /* ------ DOCUMENTER !!!! */
 .ville {
 		margin: 1.3px 0 1.3px;
-	}
+}
 
 .boximage {
 	width: 50%;
@@ -191,16 +199,16 @@ body .navbar-default .navbar-nav>.active>a,
 
 .villeCarte
 {
-   font-weight: 600;
-   position: relative;
-   border: 1px solid #827062;
-   width: 115px;
-   margin-left: auto;
-   margin-right: auto;
-   border-radius: 50px;
-   margin-top: -14px;
-   color: white;
-   background-color: #C0AD96;
+	font-weight: 600;
+	position: relative;
+	border: 1px solid #827062;
+	width: 115px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px;
+	margin-top: -14px;
+	color: white;
+	background-color: #C0AD96;
 }
 
 .signature
@@ -231,20 +239,21 @@ body .navbar-default .navbar-nav>.active>a,
     background-color: #7ede7e;
     opacity: 0;
 }
+
 /* page contact.html */
 .telephone .fa-phone
 {
-  color: #C0AD96;
+	color: #C0AD96;
 }
 /* Formulaire */
 label {
-  color: #827062;
+	color: #827062;
 }
 
 /* FOOTER */
 .page-footer {
-  margin-top: 4rem;
-  background-color: rgba(241,241,241,0.5);
+	margin-top: 4rem;
+	background-color: rgba(241,241,241,0.5);
 }
 
 .logoFooter {
@@ -256,7 +265,7 @@ label {
 }
 
 .page-footer .list-unstyled a {
-	color: #C0AD96;
+	color: #827062;
 }
 
 .footerSpace {
@@ -267,8 +276,35 @@ label {
 	color: #827062;
 }
 
+#contactForm:before {
+    display: block;
+    content: "";
+    height: 175px;
+    margin: -170px 0 0;
+}
+
+@media all and (min-width: 992px){
+	.thumbnail a:hover h3 {
+ 		color: #C0AD96;
+	}
+
+	.restaurants .thumbnail a:hover h3 {
+		color: #fff;
+	}
+
+	.plats figcaption:hover p {
+		opacity: 1;
+		font-weight: 600;
+		background-color:rgba( 192, 173, 150, 0.3);
+	}
+
+	.plats figure:hover img {
+		opacity: 0.2;
+	}
+}
+
 @media all and (max-width: 767px){
-  .media-object {
-    display: none;
-  }
+	.media-object {
+	  	display: none;
+	}
 }
